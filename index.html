@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning</title>
+
+    <!--Google fonts--> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<style>
+.footer {
+  
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:black;
+  color: white;
+  text-align: center;
+}
+.glow {
+ font-size: 80px;
+ color: #fff;
+
+ -webkit-animation: glow 1s ease-in-out infinite alternate;
+ -moz-animation: glow 1s ease-in-out infinite alternate;
+ animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+ from {
+   text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+ }
+ 
+ to {
+   text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+ }
+}
+background-image{
+  linear-gradient(to bottom right, purple, yellow);
+
+}
+   </style>
+</head>
+<body>
+  
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <a class="navbar-brand glow" href="#"><h4 style="font-family: cursive;color: palevioletred;">E-MATE</h4></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#"><h3 style="font-family: Arial, Helvetica, sans-serif;color:lightskyblue;">Home </h3><span class="sr-only">(current)</span></a>
+        </li>
+        
+        <li class="nav-item active">
+            <a class="nav-link" href="sign.html"><h3 style="font-family: Arial, Helvetica, sans-serif;color:lightskyblue;">Signup </h3><span class="sr-only">(current)</span></a>
+        
+
+        </li>
+            <a class="nav-link" href="login.html"><h3 style="font-family: Arial, Helvetica, sans-serif;color:lightskyblue;"> Login</h3><span class="sr-only">(current)</span></a>
+     
+        </li>
+        <li>
+      <button type="button" class="btn btn-danger" data-placement="right" data-toggle="popover" data-container="body" data-content="A new course is released!" style="padding-top: 10px;">
+        Notifications <span class="badge badge-light">4</span>
+      </button>
+      
+
+    </li>
+    
+   <li>
+
+            <a class="nav-link" href="login.html"><h3 style="font-family: Arial, Helvetica, sans-serif;color:lightskyblue;padding-left: 300px;">My Dashboard </h3><span class="sr-only">(current)</span></a>
+     
+        </li>
+        <li class="nav-item dropdown bg-light" style="padding-bottom: 10px;">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="font-weight: 200;">My Purchases</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#one" style="background-color: white;">Ultimate Photoshop Training</a>
+            <a class="dropdown-item" href="#two">The Beginners Guide to Artificial Intelligence in Unity Data</a>
+            <div role="separator" class="dropdown-divider"></div>
+           
+          </div>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        
+        <input class="form-control mr-sm-2" type="search" placeholder="Search for courses" aria-label="Search">
+        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+
+
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" style="padding-left: 100px;padding-right: 100px;padding-top: 0px;">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="Images\Web Design Inc..jpg" height="1000px" widdth="200px" alt="First slide">
+      
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://itcraftapps.com/wp-content/uploads/2019/11/flutter-DART.jpg" height="400px" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://shotkit.com/wp-content/uploads/2020/08/photoshop-history.jpg" height="400px" alt="Third slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://multichannelmerchant.com/wp-content/uploads/2018/07/digitalmarketing850.jpg" height="400px" alt="Third slide">
+      </div>
+    </div>
+  </div>
+<!--featured products-->
+
+<div class="small-container">
+    <h1 style="font-family: cursive;padding-top: 50px;"class="text-center">Featured Products</h1>
+<!--start-->
+  <div class="row" style="padding-left: 35px;padding-right: 35px;">
+
+      <div class="pricing-column col-sm">
+        <div class="card">
+          <img height="200px" src="images/dev1.jpeg">
+          <h3 style="font-family: sanserif;margin-left: 20px;">Flutter & Dart - The Complete Guide [2021 Edition]</h3>
+          <div class="card-body">
+            <h2>360$</h2>
+            <p>Maximilian SchwarzmÃuller</p>
+            <p>⭐⭐⭐⭐4.6(112,764)</p>
+            <p>Selling Price : 8640$</p>
+            <p>96% Off(Limited Offer)</p>
+
+            <button type="text" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              Read More... </button>
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body">
+                Join the most comprehensive & bestselling Flutter course and learn how to build amazing iOS and Android apps!You don't need to learn Android/ Java and iOS/ Swift to build real native mobile apps!Flutter - a framework developed by Google - allows you to learn one language (Dart) and build beautiful native mobile apps in no time. Flutter is a SDK providing the tooling to compile Dart code into native code and it also gives you a rich set of pre-built and pre-styled UI elements (so called widgets) which you can use to compose your user interfaces."
+              </div>
+            </div><br><br>
+
+            <button type="button" class="btn btn-lg btn-block  btn1 btn-outline-dark">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+     
+
+      <div class="pricing-column col-sm">
+        <div class="card">
+          <img height="200px" src="images/des1.jpeg">
+          <h3 style="font-family: sanserif;margin-left: 20px;">The Ultimate Drawing Course - Beginner to Advanced</h3>
+          <div class="card-body">
+            <h2>360$</h2>
+            <p>Quinton Batchelor,Jaysen</p>
+            <p>⭐⭐⭐⭐4.5(419,147)</p>
+            <p>Selling Price : 8640$</p>
+            <p>96% Off(Limited Offer)</p>
+
+            <button type="text" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              Read More... </button>
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body">
+                Join over 260,000 learning student and start gaining the drawing skills you've always wanted.The Ultimate Drawing Course will show you how to create advanced art that will stand up as professional work. This course will enhance or give you skills in the world of drawing - or your money back This course will take you from having little knowledge in drawing to creating advanced art and having a deep understanding of drawing fundamentals.
+              </div>
+            </div><br><br>
+
+            <button type="button" class="btn btn-lg btn-block  btn1 btn-outline-dark">Buy Now</button>
+          </div>
+        </div>
+      </div>  
+      
+     
+
+      <div class="pricing-column col-sm ">
+        <div class="card">
+          <img height="200px" src="images/dev2.jpeg">
+          <h3 style="font-family: sanserif;margin-left: 20px;">React - The Complete Guide (incl Hooks, React Router, Redux)</h3>
+          <div class="card-body">
+            <h2>360$</h2>
+            <p>Maximilian SchwarzmÃuller</p>
+            <p>⭐⭐⭐⭐4.6(335,179) </p>
+            <p>Selling Price :8640$</p>
+            <p>96%Off(Limited Offer)</p>
+
+            <button type="text" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              Read More... </button>
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body">
+                Learn React or dive deeper into it. Learn the theory, solve assignments, practice in demo projects and build one big application which is improved throughout the course: The Burger Builder!
+              </div>
+            </div><br><br>
+            
+            <button type="button" class="btn btn-lg btn-block btn-outline-dark  ">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pricing-column col-sm">
+        <div class="card">
+          <img height="200px" src="images/des2.jpeg">
+          <h3 style="font-family: sanserif;margin-left: 20px;">Ultimate Adobe Photoshop Training: From Beginner to Pro</h3>
+          <div class="card-body">
+            <h2>360$</h2>
+            <p>Cristian Doru Barin</p>
+            <p>⭐⭐⭐⭐4.6(129,890)</p>
+            <p>Selling Price : 8640$</p>
+            <p>96% Off(Limited Offer)</p>
+
+            <button type="text" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              Read More... </button>
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body">
+                This is the ultimate Photoshop training course that will take you from absolute beginner to proficien Learn how to use the program with ease while having fun! My approach is simple: we focus on real world cases and I present the best techniques that require minimal effort yet produce maximum results. All my content is focused on getting the job done in the least amount of time possible. I'll be using the latest version of the program - Photoshop CC 2021, but all the content is explained for all users, no matter what version you have installed.
+              </div>
+            </div><br><br>
+
+            <button type="button" class="btn btn-lg btn-block  btn1 btn-outline-dark">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="pricing-column col-sm">
+        <div class="card">
+          <img height="200px" src="images/dev3.jpeg">
+          <h3 style="font-family: sanserif;margin-left: 20px;">The Beginner's Guide to Artificial Intelligence in Unity</h3>
+          <div class="card-body">
+            <h2>360$</h2>
+            <p>Penny de Byl</p>
+            <p>⭐⭐⭐⭐4.7(20,141)</p>
+            <p>Selling Price :1000$</p>
+            <p>72%Off(Limited Offer)</p>
+            
+
+            <button type="text" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              Read More... </button>
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body">
+                This is the ultimate Photoshop training course that will take you from absolute beginner to proficien Learn how to use the program with ease while having fun! My approach is simple: we focus on real world cases and I present the best techniques that require minimal effort yet produce maximum results. All my content is focused on getting the job done in the least amount of time possible. I'll be using the latest version of the program - Photoshop CC 2021, but all the content is explained for all users, no matter what version you have installed.
+              </div>
+            </div><br><br>
+
+            <button type="button" class="btn btn-lg btn-block btn-outline-dark ">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+    </div><br><br>
+    <div class="row" style="margin-left: 35px;margin-right: 35px;">
+
+      <div class="pricing-column col-sm">
+        <div class="card">
+          <img height="200px" src="images/dev4.jpeg">
+          <h3 style="font-family: sanserif;margin-left: 20px;">Unreal Engine 4: The Complete Beginner's Course</h3>
+          <div class="card-body">
+            <h2>360$</h2>
+            <p>David Nixon</p>
+            <p>⭐⭐⭐⭐4.4(29,517)</p>
+            <p>Selling Price : 8640$</p>
+            <p>96%Off(Limited Offer)</p>
+
+            <button type="text" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              Read More... </button>
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body">
+                Learn game development with Unreal Engine 4. UE4 is the industry-leading 3D game design software that the professionals use to create today’s top games. Start your journey towards getting paid to make video games today!
+              </div>
+            </div><br><br>
+
+            <button type="button" class="btn btn-lg btn-block btn-outline-dark ">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pricing-column col-sm">
+        <div class="card">
+          <img height="200px" src="images/dev5.jpeg">
+          <h3 style="font-family: sanserif;margin-left: 20px;">The Complete Android N Developer Course</h3>
+          <div class="card-body">
+            <h2>360$</h2>
+            <p>Rob Percival</p>
+            <p>⭐⭐⭐⭐4.4(148,098)</p>
+            <p>Selling Price :8640$</p>
+            <p>96%Off(Limited Offer)</p>
+
+            <button type="text" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              Read More... </button>
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body">
+                Learn Android App Development with Android 7 Nougat by building real apps including Uber, Whatsapp and Instagram! Become a professional app developer, take freelance gigs and work from anywhere in the world.Submit your apps to Google Play and generate revenue with Google Pay and Google Ads.A huge range of technologies are covered, including open source Parse Server, Firebase, Admob, GDX (game development), Bluetooth and a whole lot more.
+              </div>
+            </div><br><br>
+
+            <button type="button" class="btn btn-lg btn-block btn-outline-dark ">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="pricing-column col-sm ">
+        <div class="card">
+          <img height="200px" src="images/des3.jpeg">
+          <h3 style="font-family: sanserif;margin-left: 20px;">Sketch from A to Z (2020): Become an app designer</h3>
+          <div class="card-body">
+            <h2>360$</h2>
+            <p>Joseph Angelo Todaro</p>
+            <p>⭐⭐⭐⭐4.7(29,146) </p>
+            <p>Selling Price :8640$</p>
+            <p>96%Off(Limited Offer)</p>
+
+            <button type="text" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              Read More... </button>
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body">
+                Learn to Design Beautiful, High-Quality Mobile Application UI with Sketch's Powerful Tools and Smooth Workflow Master the essential principles and tools of Sketch. Discover design techniques that will enhance your creative potential. Learn and implementUI best practices to ensure quality and usability. Journey from concept to completion by creating a sample mobile application.
+              </div>
+            </div><br><br>
+            <button type="button" class="btn btn-lg btn-block btn-outline-dark  ">Buy Now</button>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="pricing-column col-sm">
+        <div class="card">
+          <img height="200px" src="images/des4.jpeg">
+          <h3 style="font-family: sanserif;margin-left: 20px;">Graphic Design Bootcamp,Photoshop, Illustrator</h3>
+          <div class="card-body">
+            <h2>360$</h2>
+            <p>Derrick Mitchell</p>
+            <p>⭐⭐⭐⭐4.5(89,906)</p>
+            <p>Selling Price :8640$</p>
+            <p>96%Off(Limited Offer)</p>
+
+            <button type="text" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              Read More... </button>
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body">
+                This course is for anyone who is interested in becoming a graphic designer, and especially geared towards beginners. When you enroll in this course, you will have access to over 15 hours of on-demand content, as well as the opportunity to join a private Facebook group with over 13,000 members.
+              </div>
+            </div><br><br>
+            <button type="button" class="btn btn-lg btn-block btn-outline-dark ">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pricing-column col-sm">
+        <div class="card">
+          <img height="200px" src="images/marr1.jpeg">
+          <h3 style="font-family: sanserif;margin-left: 20px;">The Complete Digital Marketing Course - 12 in 1</h3>
+          <div class="card-body">
+            <h2>360$</h2>
+            <p>Rob Percival, Daragh Walsh</p>
+            <p>⭐⭐⭐⭐4.5(525,799)</p>
+            <p>Selling Price :8640$</p>
+            <p>96%Off(Limited Offer)</p>
+
+            <button type="text" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              Read More... </button>
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body">
+                Master Digital Marketing Strategy, Social Media Marketing, SEO, YouTube, Email, Facebook Marketing, Analytics & More! Join 400,000+ students in the bestselling digital marketing course on Udemy!
+              </div>
+            </div><br><br>
+            <button type="button" class="btn btn-lg btn-block btn-outline-dark ">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+
+    </div><br><br>
+
+ 
+  <br>
+  <div class="row" style="margin-left: 35px;margin-right: 35px;">
+
+    <div class="pricing-column col-sm">
+      <div class="card">
+        <img height="200px" src="images/marr1.jpeg">
+        <h3 style="font-family: sanserif;margin-left: 20px;">Ultimate Google Ads Training 2020: Profit with Pay Per Click</h3>
+        <div class="card-body">
+          <h2>360$</h2>
+          <p>David Nixon</p>
+          <p>⭐⭐⭐⭐4.4(29,517)</p>
+          <p>Selling Price : 8640$</p>
+          <p>96%Off(Limited Offer)</p>
+
+          <button type="text" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            Read More... </button>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+              Learn game development with Unreal Engine 4. UE4 is the industry-leading 3D game design software that the professionals use to create today’s top games. Start your journey towards getting paid to make video games today!
+            </div>
+          </div><br><br>
+
+          <button type="button" class="btn btn-lg btn-block btn-outline-dark ">Buy Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="pricing-column col-sm">
+      <div class="card">
+        <img height="200px" src="images/marr3.jpeg">
+        <h3 style="font-family: sanserif;margin-left: 20px;">Facebook Ads & Facebook Marketing MASTERY 2021 | Coursenvy</h3>
+        <div class="card-body">
+          <h2>360$</h2>
+          <p>Rob Percival</p>
+          <p>⭐⭐⭐⭐4.4(148,098)</p>
+          <p>Selling Price :8640$</p>
+          <p>96%Off(Limited Offer)</p>
+
+          <button type="text" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            Read More... </button>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+              Learn Android App Development with Android 7 Nougat by building real apps including Uber, Whatsapp and Instagram! Become a professional app developer, take freelance gigs and work from anywhere in the world.Submit your apps to Google Play and generate revenue with Google Pay and Google Ads.A huge range of technologies are covered, including open source Parse Server, Firebase, Admob, GDX (game development), Bluetooth and a whole lot more.
+            </div>
+          </div><br><br>
+
+          <button type="button" class="btn btn-lg btn-block btn-outline-dark ">Buy Now</button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="pricing-column col-sm ">
+      <div class="card">
+        <img height="200px" src="images/marr4.jpeg">
+        <h3 style="font-family: sanserif;margin-left: 20px;">Instagram Marketing 2021: Complete Guide To Instagram Growth</h3>
+        <div class="card-body">
+          <h2>360$</h2>
+          <p>Joseph Angelo Todaro</p>
+          <p>⭐⭐⭐⭐4.7(29,146) </p>
+          <p>Selling Price :8640$</p>
+          <p>96%Off(Limited Offer)</p>
+
+          <button type="text" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            Read More... </button>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+              Learn to Design Beautiful, High-Quality Mobile Application UI with Sketch's Powerful Tools and Smooth Workflow Master the essential principles and tools of Sketch. Discover design techniques that will enhance your creative potential. Learn and implementUI best practices to ensure quality and usability. Journey from concept to completion by creating a sample mobile application.
+            </div>
+          </div><br><br>
+          <button type="button" class="btn btn-lg btn-block btn-outline-dark  ">Buy Now</button>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="pricing-column col-sm">
+      <div class="card">
+        <img height="200px" src="images/marr5.jpeg">
+        <h3 style="font-family: sanserif;margin-left: 20px;">Social Media Marketing MASTERY | Learn Ads on 10+ Platforms</h3>
+        <div class="card-body">
+          <h2>360$</h2>
+          <p>Derrick Mitchell</p>
+          <p>⭐⭐⭐⭐4.5(89,906)</p>
+          <p>Selling Price :8640$</p>
+          <p>96%Off(Limited Offer)</p>
+
+          <button type="text" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            Read More... </button>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+              This course is for anyone who is interested in becoming a graphic designer, and especially geared towards beginners. When you enroll in this course, you will have access to over 15 hours of on-demand content, as well as the opportunity to join a private Facebook group with over 13,000 members.
+            </div>
+          </div><br><br>
+          <button type="button" class="btn btn-lg btn-block btn-outline-dark ">Buy Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="pricing-column col-sm">
+      <div class="card">
+        <img height="200px" src="images/cor1.jpeg">
+        <h3 style="font-family: sanserif;margin-left: 20px;">An Entire MBA in 1 Course:Award Winning Business School Prof</h3>
+        <div class="card-body">
+          <h2>360$</h2>
+          <p>Rob Percival, Daragh Walsh</p>
+          <p>⭐⭐⭐⭐4.5(525,799)</p>
+          <p>Selling Price :8640$</p>
+          <p>96%Off(Limited Offer)</p>
+
+          <button type="text" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            Read More... </button>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+              Master Digital Marketing Strategy, Social Media Marketing, SEO, YouTube, Email, Facebook Marketing, Analytics & More! Join 400,000+ students in the bestselling digital marketing course on Udemy!
+            </div>
+          </div><br><br>
+          <button type="button" class="btn btn-lg btn-block btn-outline-dark ">Buy Now</button>
+        </div>
+      </div>
+    </div>
+
+
+  </div><br><br>
+
+  <h1 style="font-family: cursive;" class="text-center">CATEGORIES</h1>
+  <div class="categories">
+    <div class="row" style="padding-left: 60px;padding-right: 60px;">
+      
+      <div class="col-3">
+        <a class="btn btn-success btn-block" href="#" role="button" >Music</a>
+      </div>
+      <div class="col-3">
+        <a class="btn btn-primary btn-block" href="#" role="button">Finance</a>
+      </div>
+      <div class="col-3">
+        <a class="btn btn-danger btn-block" href="#" role="button">Health & Fitness</a>
+      </div>
+      <div class="col-3">
+        <a class="btn btn-secondary btn-block" href="#" role="button">Lifestyle</a>
+      </div>
+    </div>
+    <br>
+    
+    <div class="row" style="padding-left: 60px;padding-right: 60px;">
+      
+      <div class="col-3">
+        <a class="btn btn-success btn-block" href="#" role="button" >Business</a>
+      </div>
+      <div class="col-3">
+        <a class="btn btn-primary btn-block" href="#" role="button">Marketing</a>
+      </div>
+      <div class="col-3">
+        <a class="btn btn-danger btn-block" href="#" role="button">Design</a>
+      </div>
+      <div class="col-3">
+        <a class="btn btn-secondary btn-block" href="#" role="button">Development</a>
+      </div>
+    </div>
+</div>
+
+
+  </div>
+  <br>
+  <div class="footer" style="height: 60px;">
+    <p>Copyright@|All Rights Reserved|Powered By E-mate|</p>
+  </div>
+  
+</body>
+</html>
